@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website - ciblak.id </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div id="home"class="navbar">
+            <h1>Ciblak.id</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+        
+    
+    <!-- Sidebar -->
+            <div id="sidebar" class="sidebar">
+                <a href="javascript:void(0)" class="close-btn">&times;</a>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">kontak</a></li>
+                    </ul>
+                    <script>
+                        const sidebar = document.getElementById("sidebar");
+                        const overlay = document.querySelector(".overlay");
+                        const sidebarToggle = document.querySelector(".sidebar-toggle");
+                        const closeBtn = document.querySelector(".close-btn");
+                    
+                        function openSidebar() {
+                            sidebar.style.width = "250px";
+                            overlay.style.display = "block";
+                        }
+                    
+                        function closeSidebar() {
+                            sidebar.style.width = "0";
+                            overlay.style.display = "none";
+                        }
+                    
+                        sidebarToggle.addEventListener("click", openSidebar);
+                        closeBtn.addEventListener("click", closeSidebar);
+                        overlay.addEventListener("click", closeSidebar);
+                    </script>
+                    
+            </div>
+            <div class="overlay"></div>
+    
+    <section id="about" class="hero ">
+        <div class="hero-content">
+            <h2>Selamat Datang Ciblakers</h2>
+            <p>Waroenk Ciblak menyajikan hidangan Seblak dan Bakso Aci yang lezat serta minuman segar, semua dibuat dari bahan-bahan pilihan berkualitas. Dengan suasana yang nyaman dan pelayanan ramah, kami berkomitmen 
+                 menghadirkan pengalaman kuliner yang tak terlupakan bagi setiap pelanggan.</p>
+            <button>Selengkapnya</button>
+        </div>
+        <div class="hero-image">
+            <img src="image/malas.jpg" width="200" height="190">
+        </div>
+    </section>
+
+    <section class="layanan">
+        <h3>LAYANAN KAMI</h3>
+        <p>Makanan di Ciblak.Id adalah makanan yang di gandrungi kaum hawa dan tetap ada beberapa kaum adam yang menyukai makanan yang ada di ciblak id ini . </p>
+        <table>
+            <tr>
+                <th>Makan di tempat</th>
+                <th>Bawa pulang</th>
+                <th>Di antar</th>
+            </tr>
+            <tr>
+                <td>Nikmati suasana nyaman dan layanan cepat untuk pengalaman makan dan minum langsung di kedai kami</td>
+                <td>Pesan dan bawa pulang hidangan favorit Anda agar bisa dinikmati di mana saja.</td>
+                <td>Kami antar langsung ke lokasi Anda tanpa harus keluar rumah.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="produk">
+        <h3>PRODUK KAMI</h3>
+        <p>Setiap menu kami diracik dengan bahan berkualitas untuk memberikan pengalaman makan dan minum yang memuaskan. Rasakan sensasi kelezatan tanpa harus merogoh kocek dalam!</p>
+        <div class="produk-list">
+            <div class="produk-item">
+                <img src="image/BaksoAci.jpg" alt="Product 3" width="300" height="200">
+                <h4>Cilok Kuwah
+                    
+                </h4>
+                <p>Cilok kenyal dengan bumbu kacang gurih dan manis yang lezat.</p>
+            </div>
+            <div class="produk-item">
+                <img src="image/seblak.jpg" alt ="Product 3" width="200" height="190">
+                <h4>Seblak cihuyyy
+
+                </h4>
+                <p>Seblak pedas gurih dengan tekstur kenyal, bikin nagih! Cocok untuk pencinta rasa otentik dan pedas!</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h3>Kontak Kami</h3>
+        <form class="contact-form">
+            <p><label for="nama">Nama:</label>
+            <input id="nama" type="text" placeholder="Nama Anda" required></p>
+
+            <p><label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Email Anda" required></p>
+
+            <p><label for="pesan">Pesan:</label>
+            <textarea id="pesan" cols="20" rows="4" placeholder="Pesan Anda"></textarea></p>
+
+            <button class="pop" type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>Hubungi Kami:</p>
+        <p><a href="mailto:gansimun@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a> <a href="https://wa.me/6285877922245"><i class="fa-solid fa-phone"></i> Telepon</a></p>
+        <p> <a href="https://maps.app.goo.gl/pTVin3zDigEiJUix7"><i class="fa-solid fa-map"></i> Alamat</a></p>
+    </footer>
+</body>
+
+</html>

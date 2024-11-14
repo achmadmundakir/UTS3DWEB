@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
+* {
+    font-family: "Roboto", sans-serif;;
+}
+
+.navbar {
+    background-color: #ff9900e0;
+    color: rgb(255, 0, 0);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    background-color: hsl(0, 0%, 96%);
+}
+
+.hero-content {
+    margin-right: 2rem;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.hero-content p {
+    margin: 1rem 0;
+    color: #666;
+}
+
+.hero button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #ff8800;
+    color: white;
+    cursor: pointer;
+}
+
+.layanan {
+    background-color: #ff8800;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.layanan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.layanan table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.layanan th, .layanan td {
+    border: 1px solid white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.produk {
+    padding: 2rem;
+    text-align: center;
+}
+
+.produk h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.produk-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.produk-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+.produk-item img {
+    width: 100%;
+     border-radius: 10%;
+}
+
+.produk-item h4 {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.produk-item p {
+    color: #666;
+}
+* {
+    font-family: "Roboto", sans-serif;;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin:  15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f0c040;
+}
+
+main h2, main h3, footer p {
+    color: #333;
+    text-align: center;
+}
+
+section p{
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f1ecec;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f0c040;
+    color: #333;
+}
+td {
+    color: #333;
+}
+
+/* .product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 39px 23px 15px -3px rgba(0,0,0,0.1);
+    max-width: 250px;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.product-card h4 {
+    margin: 10px 0;
+    font-size: 1.3em;
+}
+
+.product-card p {
+    color: #777;
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    background-color: #252525;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p{
+    color: #ddd;
+}
+footer a {
+    color: #f0c040;
+    text-decoration: none;
+    margin: 0 10px;
+} 
+
+
+
+.sidebar {
+    height: 100%; /* Full-height */
+    width: 0; /* Initial width 0 */
+    position: fixed; /* Stay in place */
+    top: 0;
+    right: 0; /* Letakkan di sebelah kanan */
+    background-color: #333; /* Warna latar */
+    overflow-x: hidden; /* Nonaktifkan scroll horizontal */
+    transition: 0.5s; /* Efek transisi */
+    padding-top: 60px; /* Jarak dari atas */
+    z-index: 1000; /* Pastikan berada di atas konten lainnya */
+}
+
+.sidebar a {
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 2em;
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1001; /* Lebih tinggi dari sidebar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-toggle:hover {
+    background-color: #555;
+}
+
+
+/* Optional: Overlay saat sidebar aktif */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 999;
+}
+
+
+.sidebar :hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
